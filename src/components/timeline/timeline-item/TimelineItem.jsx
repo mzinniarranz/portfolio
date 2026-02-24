@@ -4,7 +4,7 @@ import { useTimelineItem } from './use-timeline-item'
 import { cardVariants, nodeVariants, mobileVariants } from './config'
 import Card from './card/Card'
 
-export default function TimelineItem({ item, index }) {
+export default function TimelineItem({ item, index, onSelect }) {
   const { isLeft } = useTimelineItem(index)
 
   return (
@@ -16,7 +16,7 @@ export default function TimelineItem({ item, index }) {
     >
       <motion.div
         className={`
-          w-[calc(50%-2rem)] group cursor-default
+          w-[calc(50%-2rem)] group
           ${isLeft ? 'mr-auto pr-8' : 'ml-auto pl-8'}
           hidden md:block
         `}
@@ -26,7 +26,7 @@ export default function TimelineItem({ item, index }) {
         whileInView="visible"
         viewport={{ once: true, amount: 0.15 }}
       >
-        <Card item={item} />
+        <Card item={item} onSelect={onSelect} />
       </motion.div>
 
       <motion.div
@@ -68,7 +68,7 @@ export default function TimelineItem({ item, index }) {
               `}
             />
           </div>
-          <Card item={item} />
+          <Card item={item} onSelect={onSelect} />
         </div>
       </motion.div>
     </div>

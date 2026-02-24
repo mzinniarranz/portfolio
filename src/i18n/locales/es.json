@@ -18,6 +18,11 @@
     "label": "Herramientas",
     "title": "Stack Tecnológico"
   },
+  "drawer": {
+    "responsibilities": "Responsabilidades",
+    "highlights": "Logros destacados",
+    "close": "Cerrar"
+  },
   "language": {
     "es": "Español",
     "en": "Inglés"

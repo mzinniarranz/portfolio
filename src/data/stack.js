@@ -10,6 +10,9 @@ import {
   SiGit,
   SiVitest,
   SiJest,
+  SiReactquery,
+  SiAntdesign,
+  SiRedux,
 } from 'react-icons/si'
 
 export const stack = [
@@ -24,4 +27,7 @@ export const stack = [
   { name: 'Git', icon: SiGit },
   { name: 'Vitest', icon: SiVitest },
   { name: 'Jest', icon: SiJest },
+  { name: 'TanStack Query', icon: SiReactquery },
+  { name: 'Ant Design', icon: SiAntdesign },
+  { name: 'Redux', icon: SiRedux },
 ]

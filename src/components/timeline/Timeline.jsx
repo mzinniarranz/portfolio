@@ -1,10 +1,17 @@
+import { useState, useCallback } from 'react'
+import { AnimatePresence } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 
 import { experience } from '../../data/experience'
 import TimelineItem from './timeline-item/TimelineItem'
+import Drawer from './drawer/Drawer'
 
 export default function Timeline() {
   const { t } = useTranslation()
+  const [selectedItem, setSelectedItem] = useState(null)
+
+  const handleSelect = useCallback((item) => setSelectedItem(item), [])
+  const handleClose = useCallback(() => setSelectedItem(null), [])
 
   return (
     <section className="w-full max-w-5xl mx-auto px-4 py-16">
@@ -34,10 +41,14 @@ export default function Timeline() {
 
         <div className="md:px-0 pl-8">
           {experience.map((item, index) => (
-            <TimelineItem key={item.id} item={item} index={index} />
+            <TimelineItem key={item.id} item={item} index={index} onSelect={handleSelect} />
           ))}
         </div>
       </div>
+
+      <AnimatePresence>
+        {selectedItem && <Drawer item={selectedItem} onClose={handleClose} />}
+      </AnimatePresence>
     </section>
   )
 }

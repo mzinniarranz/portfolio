@@ -10,7 +10,7 @@ import prettier from 'eslint-plugin-prettier'
 import prettierConfig from 'eslint-config-prettier'
 
 export default [
-  { ignores: ['dist/**'] },
+  { ignores: ['dist/**', 'tailwind.config.js'] },
 
   js.configs.recommended,
   prettierConfig,

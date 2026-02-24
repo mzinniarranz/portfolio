@@ -18,6 +18,11 @@
     "label": "Tools",
     "title": "Tech Stack"
   },
+  "drawer": {
+    "responsibilities": "Responsibilities",
+    "highlights": "Key Achievements",
+    "close": "Close"
+  },
   "language": {
     "es": "Spanish",
     "en": "English"

@@ -1,10 +1,9 @@
 import { useTranslation } from 'react-i18next'
 
-import { stack } from '../../data/stack'
+import StackGroup from './stack-group/StackGroup'
 
 export default function TechStack() {
   const { t } = useTranslation()
-  const duplicated = [...stack, ...stack]
 
   return (
     <section className="w-full max-w-5xl mx-auto px-4 py-16">
@@ -24,20 +23,9 @@ export default function TechStack() {
             'linear-gradient(to right, transparent, black 10%, black 90%, transparent)',
         }}
       >
-        <div className="marquee-track flex w-max gap-12 py-4">
-          {duplicated.map((tech, i) => (
-            <div
-              key={`${tech.name}-${i}`}
-              className="
-                flex flex-col items-center gap-2 shrink-0
-                text-[#94a3b8] hover:text-violet-400
-                transition-colors duration-300 cursor-default
-              "
-            >
-              <tech.icon size={40} />
-              <span className="text-xs font-medium">{tech.name}</span>
-            </div>
-          ))}
+        <div className="marquee-track flex w-max py-4">
+          <StackGroup />
+          <StackGroup />
         </div>
       </div>
     </section>
