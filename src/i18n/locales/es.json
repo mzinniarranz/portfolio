@@ -23,6 +23,10 @@
     "highlights": "Logros destacados",
     "close": "Cerrar"
   },
+  "languages": {
+    "label": "Comunicación",
+    "title": "Idiomas"
+  },
   "language": {
     "es": "Español",
     "en": "Inglés"

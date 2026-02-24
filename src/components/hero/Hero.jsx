@@ -1,8 +1,7 @@
 import { useTranslation } from 'react-i18next'
+import { SiLinkedin } from 'react-icons/si'
 
-import { personalInfo } from '../data/experience'
-import LanguageSwitcher from './LanguageSwitcher'
-import ThemeSwitcher from './ThemeSwitcher'
+import { personalInfo } from '../../data/experience'
 
 export default function Hero() {
   const { t, i18n } = useTranslation()
@@ -13,11 +12,6 @@ export default function Hero() {
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-[-20%] left-1/2 -translate-x-1/2 w-[600px] h-[600px] rounded-full bg-violet-600/10 blur-[120px]" />
         <div className="absolute top-[10%] left-[20%] w-[300px] h-[300px] rounded-full bg-cyan-500/5 blur-[80px]" />
-      </div>
-
-      <div className="absolute top-6 right-6 z-20 flex items-center gap-2">
-        <ThemeSwitcher />
-        <LanguageSwitcher />
       </div>
 
       <div className="relative z-10 max-w-4xl mx-auto px-6 pt-28 pb-20 text-center">
@@ -86,6 +80,23 @@ export default function Hero() {
               {t('hero.contact')}
             </a>
           )}
+
+          <a
+            href="https://www.linkedin.com/in/marczinni/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+            className="
+              inline-flex items-center justify-center
+              w-12 h-12 rounded-xl
+              border border-muted/15 hover:border-violet-500/50
+              text-muted hover:text-text
+              transition-all duration-300 hover:-translate-y-0.5
+              hover:bg-muted/5
+            "
+          >
+            <SiLinkedin size={20} />
+          </a>
         </div>
       </div>
 

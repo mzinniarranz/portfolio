@@ -23,6 +23,10 @@
     "highlights": "Key Achievements",
     "close": "Close"
   },
+  "languages": {
+    "label": "Communication",
+    "title": "Languages"
+  },
   "language": {
     "es": "Spanish",
     "en": "English"
