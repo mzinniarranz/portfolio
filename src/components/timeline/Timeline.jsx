@@ -17,7 +17,6 @@ export default function Timeline() {
       </div>
 
       <div className="relative">
-        {/* Línea vertical central — solo desktop */}
         <div
           className="
             hidden md:block absolute left-1/2 -translate-x-px
@@ -26,7 +25,6 @@ export default function Timeline() {
           "
         />
 
-        {/* Línea vertical — solo móvil */}
         <div
           className="
             md:hidden absolute left-2 top-0 bottom-0 w-px

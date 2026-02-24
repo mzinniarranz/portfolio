@@ -1,10 +1,3 @@
-// ============================================================
-// EDITA ESTE ARCHIVO PARA AÑADIR O QUITAR TECNOLOGÍAS
-//
-// Cada entrada: { name, icon }
-// Iconos disponibles en https://react-icons.github.io/react-icons/
-// ============================================================
-
 import {
   SiReact,
   SiTypescript,
@@ -16,8 +9,6 @@ import {
   SiJavascript,
   SiGit,
   SiVitest,
-  SiTanstack,
-  SiPlaywright,
   SiJest,
 } from 'react-icons/si'
 
@@ -32,7 +23,5 @@ export const stack = [
   { name: 'Laravel', icon: SiLaravel },
   { name: 'Git', icon: SiGit },
   { name: 'Vitest', icon: SiVitest },
-  { name: 'TanStack', icon: SiTanstack },
-  { name: 'Playwright', icon: SiPlaywright },
   { name: 'Jest', icon: SiJest },
 ]

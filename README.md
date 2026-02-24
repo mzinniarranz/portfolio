@@ -20,12 +20,6 @@ npm run dev
 
 Abre [http://localhost:5173](http://localhost:5173)
 
-## Personalización
-
-Edita **`src/data/experience.js`** para cambiar tu nombre, título y los puestos de trabajo.
-
-Para el botón de descarga, coloca tu CV como **`public/cv.pdf`**.
-
 ## Build de producción
 
 ```bash

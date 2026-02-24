@@ -14,7 +14,6 @@ export default function TimelineItem({ item, index }) {
         ${isLeft ? 'flex-row' : 'flex-row-reverse'}
       `}
     >
-      {/* Card — desktop */}
       <motion.div
         className={`
           w-[calc(50%-2rem)] group cursor-default
@@ -30,7 +29,6 @@ export default function TimelineItem({ item, index }) {
         <Card item={item} />
       </motion.div>
 
-      {/* Nodo central — desktop */}
       <motion.div
         className="hidden md:flex absolute left-1/2 -translate-x-1/2 flex-col items-center z-10"
         variants={nodeVariants}
@@ -50,7 +48,6 @@ export default function TimelineItem({ item, index }) {
         />
       </motion.div>
 
-      {/* Card — móvil */}
       <motion.div
         className="w-full md:hidden"
         variants={mobileVariants}
