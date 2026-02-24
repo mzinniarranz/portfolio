@@ -42,7 +42,7 @@ export default function TimelineItem({ item, index, onSelect }) {
             ${
               item.current
                 ? 'bg-violet-500 border-violet-400 shadow-[0_0_12px_rgba(124,58,237,0.8)]'
-                : 'bg-[#1a1a2e] border-violet-600 group-hover:border-violet-400'
+                : 'bg-surface border-violet-600 group-hover:border-violet-400'
             }
           `}
         />
@@ -63,7 +63,7 @@ export default function TimelineItem({ item, index, onSelect }) {
                 ${
                   item.current
                     ? 'bg-violet-500 border-violet-400 shadow-[0_0_10px_rgba(124,58,237,0.7)]'
-                    : 'bg-[#1a1a2e] border-violet-600'
+                    : 'bg-surface border-violet-600'
                 }
               `}
             />

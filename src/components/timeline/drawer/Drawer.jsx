@@ -26,7 +26,7 @@ export default function Drawer({ item, onClose }) {
 
       <motion.aside
         ref={drawerRef}
-        className="fixed top-0 right-0 z-50 h-full w-full sm:w-[28rem] md:w-[32rem] bg-[#1a1a2e]/95 backdrop-blur-xl border-l border-violet-900/30 shadow-[-8px_0_30px_rgba(124,58,237,0.15)]"
+        className="fixed top-0 right-0 z-50 h-full w-full sm:w-[28rem] md:w-[32rem] bg-surface/95 backdrop-blur-xl border-l border-violet-900/30 shadow-[-8px_0_30px_rgba(124,58,237,0.15)]"
         variants={panelVariants}
         initial="hidden"
         animate="visible"
@@ -39,7 +39,7 @@ export default function Drawer({ item, onClose }) {
         <button
           onClick={onClose}
           aria-label={t('drawer.close')}
-          className="absolute top-4 right-4 z-10 w-8 h-8 rounded-lg flex items-center justify-center text-[#94a3b8] hover:text-[#e2e8f0] bg-white/5 hover:bg-white/10 border border-white/10 hover:border-violet-500/40 transition-all duration-200"
+          className="absolute top-4 right-4 z-10 w-8 h-8 rounded-lg flex items-center justify-center text-muted hover:text-text bg-muted/5 hover:bg-muted/10 border border-muted/15 hover:border-violet-500/40 transition-all duration-200"
         >
           <svg
             width="14"

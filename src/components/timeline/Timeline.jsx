@@ -16,10 +16,10 @@ export default function Timeline() {
   return (
     <section className="w-full max-w-5xl mx-auto px-4 py-16">
       <div className="text-center mb-16">
-        <p className="text-xs font-semibold tracking-[0.3em] uppercase text-violet-400 mb-3">
+        <p className="text-xs font-semibold tracking-[0.3em] uppercase text-accent-text mb-3">
           {t('timeline.label')}
         </p>
-        <h2 className="text-3xl md:text-4xl font-bold text-[#e2e8f0]">{t('timeline.title')}</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-text">{t('timeline.title')}</h2>
         <div className="mt-4 mx-auto w-16 h-px bg-gradient-to-r from-transparent via-violet-500 to-transparent" />
       </div>
 

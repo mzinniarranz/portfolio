@@ -10,24 +10,24 @@ export default function LanguageSwitcher() {
   }
 
   return (
-    <div className="inline-flex items-center rounded-lg border border-white/10 overflow-hidden text-xs font-semibold">
+    <div className="inline-flex items-center rounded-lg border border-muted/15 overflow-hidden text-xs font-semibold">
       <button
         onClick={() => toggle('es')}
-        className={`px-3 py-1.5 transition-colors duration-200 ${
+        className={`px-3 py-1.5 cursor-pointer transition-colors duration-200 ${
           current === 'es'
             ? 'bg-violet-600 text-white'
-            : 'text-[#94a3b8] hover:text-[#e2e8f0] hover:bg-white/5'
+            : 'text-muted hover:text-text hover:bg-muted/5'
         }`}
       >
         ES
       </button>
-      <div className="w-px h-4 bg-white/10" />
+      <div className="w-px h-4 bg-muted/15" />
       <button
         onClick={() => toggle('en')}
-        className={`px-3 py-1.5 transition-colors duration-200 ${
+        className={`px-3 py-1.5 cursor-pointer transition-colors duration-200 ${
           current === 'en'
             ? 'bg-violet-600 text-white'
-            : 'text-[#94a3b8] hover:text-[#e2e8f0] hover:bg-white/5'
+            : 'text-muted hover:text-text hover:bg-muted/5'
         }`}
       >
         EN

@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next'
 
 import { personalInfo } from '../data/experience'
 import LanguageSwitcher from './LanguageSwitcher'
+import ThemeSwitcher from './ThemeSwitcher'
 
 export default function Hero() {
   const { t, i18n } = useTranslation()
@@ -14,7 +15,8 @@ export default function Hero() {
         <div className="absolute top-[10%] left-[20%] w-[300px] h-[300px] rounded-full bg-cyan-500/5 blur-[80px]" />
       </div>
 
-      <div className="absolute top-6 right-6 z-20">
+      <div className="absolute top-6 right-6 z-20 flex items-center gap-2">
+        <ThemeSwitcher />
         <LanguageSwitcher />
       </div>
 
@@ -31,22 +33,22 @@ export default function Hero() {
           {personalInfo.name.charAt(0)}
         </div>
 
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-violet-500/30 bg-violet-500/10 text-violet-300 text-xs font-medium tracking-wider uppercase mb-6">
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-violet-500/30 bg-violet-500/10 text-accent-light text-xs font-medium tracking-wider uppercase mb-6">
           <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse" />
           {t('hero.available')}
         </div>
 
         <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-4">
-          <span className="bg-gradient-to-r from-[#e2e8f0] via-white to-[#94a3b8] bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-text to-muted bg-clip-text text-transparent">
             {personalInfo.name}
           </span>
         </h1>
 
-        <p className="text-xl md:text-2xl font-semibold text-violet-400 mb-4">
+        <p className="text-xl md:text-2xl font-semibold text-accent-text mb-4">
           {personalInfo.title[lang] ?? personalInfo.title.es}
         </p>
 
-        <p className="text-base md:text-lg text-[#94a3b8] max-w-2xl mx-auto leading-relaxed mb-10">
+        <p className="text-base md:text-lg text-muted max-w-2xl mx-auto leading-relaxed mb-10">
           {personalInfo.subtitle[lang] ?? personalInfo.subtitle.es}
         </p>
 
@@ -75,10 +77,10 @@ export default function Hero() {
               className="
                 inline-flex items-center gap-2
                 px-7 py-3.5 rounded-xl
-                border border-white/10 hover:border-violet-500/50
-                text-[#94a3b8] hover:text-[#e2e8f0] font-semibold text-sm
+                border border-muted/15 hover:border-violet-500/50
+                text-muted hover:text-text font-semibold text-sm
                 transition-all duration-300 hover:-translate-y-0.5
-                hover:bg-white/5
+                hover:bg-muted/5
               "
             >
               {t('hero.contact')}
