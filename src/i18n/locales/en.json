@@ -1,0 +1,25 @@
+{
+  "hero": {
+    "available": "Open to work",
+    "downloadCV": "Download CV",
+    "contact": "Contact"
+  },
+  "timeline": {
+    "label": "Journey",
+    "title": "+10 years of experience"
+  },
+  "item": {
+    "current": "Current"
+  },
+  "footer": {
+    "credit": "Marc Zinni Arranz - 2026"
+  },
+  "techStack": {
+    "label": "Tools",
+    "title": "Tech Stack"
+  },
+  "language": {
+    "es": "Spanish",
+    "en": "English"
+  }
+}

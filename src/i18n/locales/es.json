@@ -1,0 +1,25 @@
+{
+  "hero": {
+    "available": "Open to work",
+    "downloadCV": "Descargar CV",
+    "contact": "Contactar"
+  },
+  "timeline": {
+    "label": "Trayectoria",
+    "title": "+10 años de experiencia"
+  },
+  "item": {
+    "current": "Actual"
+  },
+  "footer": {
+    "credit": "Marc Zinni Arranz - 2026"
+  },
+  "techStack": {
+    "label": "Herramientas",
+    "title": "Stack Tecnológico"
+  },
+  "language": {
+    "es": "Español",
+    "en": "Inglés"
+  }
+}

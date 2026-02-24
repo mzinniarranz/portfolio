@@ -1,0 +1,7 @@
+Coloca tu archivo CV con el nombre exacto:
+
+    cv.pdf
+
+en esta carpeta (public/).
+
+El botón "Descargar CV" apunta automáticamente a /cv.pdf.
