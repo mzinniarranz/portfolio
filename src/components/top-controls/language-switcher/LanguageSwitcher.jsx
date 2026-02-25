@@ -7,6 +7,7 @@ export default function LanguageSwitcher() {
   const toggle = (lang) => {
     i18n.changeLanguage(lang)
     document.documentElement.lang = lang
+    localStorage.setItem('lang', lang)
   }
 
   return (
