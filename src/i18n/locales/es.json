@@ -2,7 +2,8 @@
   "hero": {
     "available": "Open to work",
     "downloadCV": "Descargar CV",
-    "contact": "Contactar"
+    "contact": "Contactar",
+    "copied": "¡Email copiado!"
   },
   "timeline": {
     "label": "Trayectoria",

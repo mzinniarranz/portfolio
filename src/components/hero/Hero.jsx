@@ -48,7 +48,7 @@ export default function Hero() {
           {personalInfo.subtitle[lang] ?? personalInfo.subtitle.es}
         </p>
 
-        <div className="flex items-center justify-center gap-4 flex-wrap">
+        <div id="hero-cta" className="flex items-center justify-center gap-4 flex-wrap">
           <DownloadCv />
           {personalInfo.email && <Contact email={personalInfo.email} />}
           <Linkedin />
