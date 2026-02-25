@@ -87,8 +87,8 @@ export const experience = [
     company: 'Integrated Environmental Solutions | IES',
     location: { es: 'Glasgow, Escocia', en: 'Glasgow, Scotland' },
     role: {
-      es: 'Desarrollador Full Stack',
-      en: 'Full Stack Developer',
+      es: 'Desarrollador Frontend',
+      en: 'Frontend Developer',
     },
     period: {
       es: '2022 — 2023',
