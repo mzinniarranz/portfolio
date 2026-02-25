@@ -3,11 +3,11 @@ import { useTranslation } from 'react-i18next'
 import { DownloadIcon } from './config'
 
 export default function DownloadCv() {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
 
   return (
     <a
-      href="/cv.pdf"
+      href={`/marc-zinni-cv-${i18n.language.toUpperCase()}.pdf`}
       download
       className="
         inline-flex items-center gap-2.5
