@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import { Analytics } from '@vercel/analytics/react'
+import { SpeedInsights } from '@vercel/speed-insights/react'
 
 import Hero from './components/hero/Hero'
 import TopControls from './components/top-controls/TopControls'
@@ -22,6 +23,7 @@ export default function App() {
         <p className="text-xs text-muted/50">{t('footer.credit')}</p>
       </footer>
       <Analytics />
+      <SpeedInsights />
     </div>
   )
 }
