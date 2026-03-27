@@ -20,7 +20,16 @@ export default function App() {
       <Languages />
 
       <footer className="w-full border-t border-border mt-8 py-8 text-center">
-        <p className="text-xs text-muted/50">{t('footer.credit')}</p>
+        <p className="text-xs text-muted/50">
+          <a
+            href="https://github.com/mzinniarranz/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-accent-light transition-colors"
+          >
+            {t('footer.credit')}
+          </a>
+        </p>
       </footer>
       <Analytics />
       <SpeedInsights />
